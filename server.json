@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/nber-macrohistory",
+  "title": "Nber Macrohistory",
+  "description": "NBER Macrohistory Database — the National Bureau of Economic Research's",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/nber-macrohistory",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-nber-macrohistory",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/nber-macrohistory/mcp"
+    }
+  ]
+}
