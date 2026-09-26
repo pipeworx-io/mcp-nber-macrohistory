@@ -7,7 +7,7 @@ running from the 1800s through the 1960s, across 16 subject categories
 foreign trade, government finance, and more). Look up a specific series by its
 NBER id (e.g. `m13045`), or browse the ids in one of the 16 subject folders.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1674+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1683+ live data sources.
 
 ## Tools
 
@@ -120,7 +120,7 @@ directly, instead of just this one's:
 }
 ```
 
-Both URLs reach the same gateway and the same 1674+ data sources. The
+Both URLs reach the same gateway and the same 1683+ data sources. The
 only difference is which pack's tools are listed **directly**; `ask_pipeworx`
 reaches all of them from either one.
 

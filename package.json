@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-nber-macrohistory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NBER Macrohistory Database — the National Bureau of Economic Research's",
   "type": "module",
   "main": "src/index.ts",
@@ -24,5 +24,9 @@
   "devDependencies": {
     "typescript": "^5.9.3",
     "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-6fef5ddeaec5f790a49a67ffb272fe9920a086f559e9a2707986cc7e3cd0b219",
+    "sourceCommit": "6182c4cfebddb94950e060b5d2fca18f18ad1aca"
   }
 }
