@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-nber-macrohistory",
-  "version": "0.1.1",
-  "description": "NBER Macrohistory Database — the National Bureau of Economic Research's",
+  "version": "0.1.2",
+  "description": "NBER Macrohistory Database — the National Bureau of Economic Research's 'Public Use Data Archive' of long-run U.S. (and some international) macroeconomic series, most running from the 1800s-1960s.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-6fef5ddeaec5f790a49a67ffb272fe9920a086f559e9a2707986cc7e3cd0b219",
-    "sourceCommit": "6182c4cfebddb94950e060b5d2fca18f18ad1aca"
+    "sourceHash": "v1-fc992664ff81ad96c95556581c93d81041c65310d2ec5381fd513cd6147b4ae7",
+    "sourceCommit": "774de7f685a75e02d0b828d24a7b94794102152c"
   }
 }
