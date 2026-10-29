@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/nber-macrohistory",
   "title": "Nber Macrohistory",
   "description": "NBER Macrohistory Database — the National Bureau of Economic Research's 'Public Use Data Archive'…",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/nber-macrohistory",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-nber-macrohistory",

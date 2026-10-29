@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-nber-macrohistory",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "NBER Macrohistory Database — the National Bureau of Economic Research's 'Public Use Data Archive' of long-run U.S. (and some international) macroeconomic series, most running from the 1800s-1960s.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-nber-macrohistory": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "nber-macrohistory"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-nber-macrohistory.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/nber-macrohistory",
   "pipeworx": {
-    "sourceHash": "v1-fc992664ff81ad96c95556581c93d81041c65310d2ec5381fd513cd6147b4ae7",
-    "sourceCommit": "774de7f685a75e02d0b828d24a7b94794102152c"
+    "mode": "gateway",
+    "slug": "nber-macrohistory",
+    "gatewaySlug": "nber-macrohistory",
+    "sourceHash": "v1-1d227d9ed4e2a381b580f57e9c65c9a9b9010dbeb7ec368fc542c7adaef54743",
+    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
   }
 }

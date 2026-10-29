@@ -1,0 +1,34 @@
+[
+  {
+    "name": "nber_macrohistory_series",
+    "description": "One NBER Macrohistory series by its NBER id (e.g. \"m13045\", \"a01006\", \"q04002\") — the National Bureau of Economic Research's long-run archive of historical U.S. macroeconomic series (prices, money & banking, production, trade, employment, construction, agriculture, government finance…), most spanning the 1800s-1960s. Returns the series title, area covered, units, coverage dates and source notes (parsed from NBER's own documentation for the series) plus every dated observation. m-prefixed ids are monthly, a-prefixed are annual, q-prefixed are quarterly. If you only have the bare digits (no letter), this tries monthly first, then annual, then quarterly. Source: NBER Macrohistory Database (nber.org), fetched live per request.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "series_id": {
+          "type": "string",
+          "description": "NBER series id, e.g. \"m13045\" (with its letter prefix if known) or \"13045\" (bare digits — tries m/a/q in order)."
+        }
+      },
+      "required": [
+        "series_id"
+      ]
+    }
+  },
+  {
+    "name": "nber_macrohistory_list_series",
+    "description": "List every NBER Macrohistory series id in one of the archive's 16 subject categories (2-digit folder \"01\" through \"16\") — use this to discover what series exist in a category before fetching one with nber_macrohistory_series. Returns the raw series ids only (no titles — the archive's directory listing does not carry them; call nber_macrohistory_series on an id to see its title). Category 07/11/13/15/16 lean monthly (m-prefixed), most others are annual (a-prefixed).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string",
+          "description": "Two-digit category folder, \"01\" through \"16\"."
+        }
+      },
+      "required": [
+        "category"
+      ]
+    }
+  }
+]
